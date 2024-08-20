@@ -158,6 +158,7 @@ a {
 
 .header-action__signup {
     --height-button: 44px;
+    min-width: 104px;
 }
 
 /* HERO */
@@ -373,4 +374,128 @@ a {
 .work-item:hover .work-item__action {
     color: var(--action-color);
     font-weight: 400;
+}
+
+/* FEATURE */
+
+.feature-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature-images {
+    position: relative;
+    width: 48%;
+    height: 491px;
+}
+
+.feature__img {
+    position: absolute;
+    width: 512px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 6px;
+
+}
+
+.feature__img:last-child {
+    width: 332px;
+    height: 370px;
+    right: 0;
+    bottom: 0;
+}
+
+
+.feature-body {
+    width: 470px;
+}
+
+.feature-body__action {
+    margin-top: 38px;
+}
+
+/* MEMBER */
+.member-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.member__action {
+    margin-top: 38px;
+}
+
+.member__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 34px;
+}
+
+.member-item {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.member-item__img-bg {
+    position: relative;
+    width: 270px;
+    height: 318px;
+    background: #EAF6FF;
+    border-radius: 6px;
+}
+
+.member-item__avt {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.member-item__img-bg:hover .member-item__avt {
+    height: 100%;
+}
+
+.member-item__name {
+    margin-top: 12px;
+    color: #10375C;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.75;
+}
+
+.member-item__info {
+    color: #575F66;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.86;
+}
+
+.member__control {
+    margin-top: 38px;
+    display: flex;
+    column-gap: 18px;
+}
+
+.member__control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575F66;
+    background: #FFF;
+}
+
+
+.member__control-btn:hover {
+    background-color: var(--action-color);
+    border: none;
 }
